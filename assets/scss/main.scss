@@ -16,8 +16,9 @@
 	padding: 13px 0px;
 }
 .header-wrapper {
-	max-width: 1632px;
-	margin: 0 auto;
+	// max-width: 1632px;
+	// margin: 0 auto;
+	padding: 0px 150px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -94,6 +95,11 @@
 	}
 }
 // Responsive 
+@media screen and (max-width: 1400px) {
+	.header-wrapper {
+		padding: 0px 0px;
+	}
+}
 @media screen and (max-width: 991px) {
 	.mobile-menu {
 		padding: 20px 100px;
@@ -486,5 +492,76 @@
 		p {
 			font-size: 15px;
 		}
+	}
+}
+
+// Home Page Style End Here
+
+// About Page Style Start Here ======================================
+// Banner Style
+.about-banner-area {
+	padding-top: 50px;
+}
+.about-banner-wrapper {
+	max-width: 1036px;
+	margin: 0 auto;
+}
+.about-banner-top-content {
+	text-align: left;
+	h1 {
+		font-size: 40px;
+		font-weight: 300;
+		color: #fff;
+		line-height: 1.7;
+		span {
+			font-weight: 600;
+			color: #DE1F00;
+		}
+	}
+}
+
+.about-banner-wrap {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.about-banner-content {
+	max-width: 560px;
+	width: 100%;
+	p {
+		font-size: 18px;
+		color: #fff;
+		font-weight: 200;
+		margin-top: 30px;
+		a {
+			font-weight: 600;
+			text-decoration: underline;
+			color: #fff;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+.about-banner-thumb {
+	max-width: 321px;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.about-banner-top-content {
+		h1 {
+			line-height: 1.5;
+		}
+	}
+	.about-banner-wrap {
+		margin-top: 50px;
+		flex-direction: column-reverse;
 	}
 }

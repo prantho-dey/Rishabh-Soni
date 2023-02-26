@@ -15,6 +15,10 @@ $(document).ready(function() {
                     menuBody.addClass('overflow-hidden');
                 });
 
+                menuList.on("click", function() {
+                    mainMenu.removeClass('menu-active');
+					menuBody.removeClass('overflow-hidden');
+                }),
                 menuClose.on("click", function() {
                     mainMenu.removeClass('menu-active');
 					menuBody.removeClass('overflow-hidden');
