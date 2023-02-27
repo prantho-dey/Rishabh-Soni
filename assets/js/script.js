@@ -31,10 +31,19 @@ $(document).ready(function() {
                 }
             })
         },
-     
+
+		aos_aimation: function(){
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 50,
+                anchorPlacement: 'top-bottom',
+            }); 
+        },
 
         init: function() {
             allfunction.menu_toggle()
+            allfunction.aos_aimation()
         },
     }
     

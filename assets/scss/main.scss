@@ -716,3 +716,294 @@
 		padding: 70px 0px;
 	}
 }
+
+// About Style End Here ===============================================
+
+// Goole Style  Start
+.google-banner-area {
+	padding: 115px 0px;
+}
+.google-banner-wrapper {
+	max-width: 1632px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+.google-banner-thumb {
+	max-width: 1000px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	img {
+		width: 100%;
+	}
+}
+.google-banner-content {
+	max-width: 572px;
+	width: 100%;
+	h4 {
+		font-size: 22px;
+		font-weight: 600;
+		color: #4285F4;
+	}
+	.single-content {
+		margin-top: 20px;
+		h6 {
+			font-size: 16px;
+			font-weight: 400;
+			color: #181818;
+		}
+		p {
+			font-size: 16px;
+			font-weight: 200;
+			color: #181818;
+			padding: 0;
+			margin: 0;
+			margin-top: 10px;
+			a {
+				color: #000;
+				font-weight: 400;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.google-image-area {
+	padding: 50px 0px;
+}
+.google-image {
+	max-width: 1365px;
+	margin: 0 auto;
+	img {
+		width: 100%;
+	}
+}
+.next-project {
+	padding: 50px 0px;
+	a {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 18px;
+		font-weight: 400;
+		justify-content: center;
+		color: #000;
+	}
+}
+
+// Resopnsive
+@media screen and (max-width: 1199px) {
+	.google-banner-area {
+		padding: 80px 0px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.google-banner-wrapper {
+		flex-direction: column;
+	}
+	.google-banner-content {
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.google-image-area {
+		padding: 0px 0px 50px;
+	}
+	.google-banner-area {
+		padding: 70px 0px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.google-banner-area {
+		padding: 50px 0px;
+	}
+}
+
+// Architecture Banner
+.architecture-banner-area {
+	padding: 100px 0px;
+}
+.architecture-banner-content {
+	max-width: 1148px;
+	margin: 0 auto;
+	h1 {
+		font-size: 30px;
+		line-height: 1.7;
+		color: #000;
+		font-weight: 200;
+		span {
+			color: #DE1F00;
+			font-weight: 400;
+		}
+		a {
+			color: #000;
+			font-weight: 400;
+			text-decoration: underline;
+		}
+	}
+}
+@media screen and (max-width: 1199px) {
+	.architecture-banner-area {
+		padding: 70px 0px;
+	}
+}
+@media screen and (max-width: 767px) {
+
+	.architecture-banner-content {
+		h1 {
+			font-size: 26px;
+			line-height: 1.5;
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.architecture-banner-area {
+		padding: 50px 0px;
+	}
+	.architecture-banner-content {
+		h1 {
+			font-size: 24px;
+		}
+	}
+}
+
+// Arc Project
+.arc-project-area {
+	padding: 0px 0px 50px;
+}
+.arc-project-wrapper {
+	max-width: 1148px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
+}
+.arc-single-project {
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		opacity: 0;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		transition: all .3s ease-in-out;
+	}
+	img {
+		width: 100%;
+		transition: all .5s ease-in-out;
+		transform: scale(1);
+	}
+	.content {
+		position: absolute;
+		z-index: 2;
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		// margin: 20px;
+		overflow: auto;
+		div {
+			text-align: center;
+			max-width: 490px;
+			margin: 0 auto;
+			margin: 20px;
+			h2 {
+				font-size: 30px;
+				color: #000;
+				font-weight: 600;
+				a {
+					color: #000;
+				}
+			}
+			span {
+				font-size: 18px;
+				font-weight: 200;
+				display: block;
+				margin-top: 20px;
+			}
+			h4 {
+				color: #000;
+				font-size: 18px;
+				font-weight: 400;
+				margin-top: 20px;
+				line-height: 1.7;
+				a {
+					color: #000;
+				}
+			}
+			h2,span,h4 {
+				transform: translateY(50px);
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	&:hover {
+		&::before {
+			opacity: 0.8;
+		}
+		img {
+			transform: scale(1.1);
+		}
+		div {
+			h2,span,h4 {
+				transform: translateY(0px);
+				opacity: 1;
+				visibility: visible;
+			}
+			h2 {
+				transition-duration: .5s;
+			}
+			span {
+				transition-duration: 1s;
+			}
+			h4 {
+				transition-duration: 1.5s;
+			}
+		}
+	}
+}
+
+// Responsive 
+@media screen and (max-width: 991px) {
+	.arc-project-area {
+		padding: 0px 0px 0px;
+	}
+	.arc-project-wrapper {
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+}
+@media screen and (max-width: 575px) {
+	.arc-single-project {
+		.content {
+			div {
+				h2 {
+					font-size: 24px;
+				}
+				span {
+					font-size: 16px;
+					margin-top: 15px;
+				}
+				h4 {
+					font-size: 17px;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
