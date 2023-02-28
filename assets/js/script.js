@@ -58,7 +58,7 @@ $(document).ready(function() {
     }
     
     allfunction.init();
-    // window.addEventListener('load',function(){
-    //     document.querySelector('body').classList.add("loaded")  
-    // });
+    window.setTimeout(function() {
+        document.querySelector('body').classList.add("loaded")
+    }, 4000);
 });
