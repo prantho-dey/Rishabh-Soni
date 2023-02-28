@@ -41,9 +41,19 @@ $(document).ready(function() {
             }); 
         },
 
+        magnific: function() {
+            $('.popup-image').magnificPopup({
+                type: 'image',
+                gallery: {
+                  enabled: true
+                }
+            });
+        },
+
         init: function() {
             allfunction.menu_toggle()
             allfunction.aos_aimation()
+            allfunction.magnific()
         },
     }
     

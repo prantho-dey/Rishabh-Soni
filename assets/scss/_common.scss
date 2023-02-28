@@ -147,3 +147,165 @@ p {
 .container-fluid {
     padding: 0px 20px;
 }
+
+.s-py-100 {
+    padding: 100px 0px;
+}
+.s-py-50 {
+    padding: 50px 0px;
+}
+.s-py-100-50 {
+    padding: 100px 0px 50px;
+}
+.s-py-50-100 {
+    padding: 50px 0px 100px;
+}
+.s-pt-50 {
+    padding-top: 50px;
+}
+.s-pb-50 {
+    padding-bottom: 50px;
+}
+.s-pt-100 {
+    padding-top: 100px;
+}
+.s-pb-100 {
+    padding-bottom: 100px;
+}
+.s-py-70 {
+    padding: 70px 0px;
+}
+.s-pt-70 {
+    padding-top: 70px;
+}
+.s-pb-70 {
+    padding-bottom: 70px;
+}
+.s-my-50-100 {
+    margin: 50px 0px 100px;
+}
+.margin-0 {
+    margin: 0 !important;
+}
+
+
+@media screen and (max-width: 991px) {
+    .s-py-100 {
+        padding: 70px 0px;
+    }
+    .s-py-50 {
+        padding: 35px 0px;
+    }
+    .s-py-100-50 {
+        padding: 70px 0px 35px;
+    }
+    .s-py-50-100 {
+        padding: 35px 0px 70px;
+    }
+    .s-pt-50 {
+        padding-top: 35px;
+    }
+    .s-pb-50 {
+        padding-bottom: 35px;
+    }
+    .s-pt-100 {
+        padding-top: 70px;
+    }
+    .s-pb-100 {
+        padding-bottom: 70px;
+    }
+    .s-pt-80 {
+        padding-top: 50px;
+    }
+    .s-my-50-100 {
+        margin: 35px 0px 70px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .s-py-100 {
+        padding: 50px 0px;
+    }
+    .s-pt-50 {
+        padding-top: 25px;
+    }
+    .s-py-50 {
+        padding: 25px 0px;
+    }
+    .s-py-100-50 {
+        padding: 50px 0px 25px;
+    }
+    .s-py-50-100 {
+        padding: 25px 0px 50px;
+    }
+    .s-pb-50 {
+        padding-bottom: 25px;
+    }
+    .s-pt-100 {
+        padding-top: 50px;
+    }
+    .s-py-70 {
+        padding: 50px 0px;
+    }
+    .s-pt-70 {
+        padding-top: 50px;
+    }
+    .s-pb-70 {
+        padding-bottom: 50px;
+    }
+    .s-pb-100 {
+        padding-bottom: 50px;
+    }
+    .s-pt-80 {
+        padding-top: 40px;
+    }
+    .s-my-50-100 {
+        margin: 25px 0px 50px;
+    }
+}
+
+
+// Section Title 
+.section-title {
+	margin-bottom: 50px;
+	text-align: center;
+	h4 {
+		font-size: 22px;
+		font-weight: 600;
+		line-height: 1;
+		margin: 0;
+		padding: 0;
+	}
+    p {
+        font-size: 17px;
+        font-weight: 200;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+	.section-title {
+		margin-bottom: 30px;
+		// h4 {
+		// 	font-size: 20px;
+		// }
+	}
+}
+
+
+
+.page-bg-primary {
+	background-color: #C91212;
+}
+.page-color-primary {
+	color: #C91212;
+}
+
+.page-v2 {
+    .page-bg-primary {
+        background-color: #001aff;
+    }
+    .page-color-primary {
+        color: #001aff;
+    }
+}
